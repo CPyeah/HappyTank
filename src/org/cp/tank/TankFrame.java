@@ -5,6 +5,8 @@ import java.awt.Graphics;
 
 public class TankFrame extends Frame{
 	
+	private int x =50, y=50;
+	
 	public TankFrame() {
 		this.setSize(800, 500);
 		this.setResizable(false);
@@ -19,7 +21,8 @@ public class TankFrame extends Frame{
 	@Override
 	public void paint(Graphics g) {
 		System.out.println("paint...");
-		g.fillRect(50, 50, 50, 50);
+		g.fillRect(x, y, 50, 50);
+		x++;
 	}
 
 }
