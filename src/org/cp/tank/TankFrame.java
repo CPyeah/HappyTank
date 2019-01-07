@@ -2,14 +2,13 @@ package org.cp.tank;
 
 import java.awt.Frame;
 
-public class TankFrame {
-
-	public static void main(String[] args) {
-		Frame frame = new Frame();
-		frame.setSize(800, 600);
-		frame.setResizable(false);
-		frame.setVisible(true);
-
+public class TankFrame extends Frame{
+	
+	public TankFrame() {
+		this.setSize(800, 500);
+		this.setResizable(false);
+		this.setVisible(true);
+		
 	}
 
 }
